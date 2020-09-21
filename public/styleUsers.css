@@ -1,0 +1,64 @@
+/* STYLE UserStories*/
+* {
+    font-size: 1rem;
+    
+}
+
+.code-box {
+  background:  rgb(197, 180, 207);
+  border-radius: 5px;
+  padding: .5rem;
+  -webkit-box-shadow: -4px 3px 8px 0px rgba(92,89,99,1);
+-moz-box-shadow: -4px 3px 8px 0px rgba(92,89,99,1);
+box-shadow: -4px 3px 8px 0px rgba(92,89,99,1);
+  font-weight: bold;
+  width: 60%;
+  overflow-wrap: break-word;
+}
+#userstories-body {
+    line-height: 1.8;
+    list-style-position: inside;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    padding: 2rem; 
+    background: rgb(156, 156, 184);
+    width: 80vw;
+    margin: 0 auto;
+}
+  h3 {
+    background:  rgb(121, 103, 170);
+    width: 20%;
+    border-radius: 5px;
+    padding: .5rem;
+    text-align: center;
+    -webkit-box-shadow: -4px 3px 8px 0px rgba(62,48,89,1);
+-moz-box-shadow: -4px 3px 8px 0px rgba(62,48,89,1);
+box-shadow: -4px 3px 8px 0px rgba(62,48,89,1);
+  }
+  ol {
+    background:  rgb(197, 180, 207);
+    width: 90%;
+    border-radius: 5px;
+    padding: 1rem;
+    -webkit-box-shadow: -4px 3px 8px 0px rgba(92,89,99,1);
+    -moz-box-shadow: -4px 3px 8px 0px rgba(92,89,99,1);
+    box-shadow: -4px 3px 8px 0px rgba(92,89,99,1);
+  }
+h2 {
+  margin-bottom: 1.755rem; 
+}
+a {
+  background:  rgb(121, 103, 170);
+  padding: .75rem;
+  border-radius: 5px;
+  -webkit-box-shadow: -4px 3px 8px 0px rgba(62,48,89,1);
+-moz-box-shadow: -4px 3px 8px 0px rgba(62,48,89,1);
+box-shadow: -4px 3px 8px 0px rgba(62,48,89,1);
+
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: rgb(43, 39, 39);
+}

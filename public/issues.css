@@ -1,0 +1,175 @@
+
+body {
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  background:  rgb(197, 180, 207);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(143, 143, 197);
+  width: 100%;
+  min-height: 20vh;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+#forms {
+  display: flex;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: .75rem;
+  margin-right: .75rem;
+
+}
+input {
+  padding-left: .5rem;
+  margin-top: 1rem;
+  outline: none;
+  min-height: 1.5rem;
+  min-width: 4rem;
+}
+#api-tests {
+  text-align: center;
+}
+textarea {
+  padding-left: .5rem;
+  margin: .5rem;
+  outline: none;
+  resize: vertical;
+  min-width: 4rem;
+  min-height: 3.5rem;
+
+}
+.issue {
+    margin: 20px;
+    padding: 5px;
+    width: 60%;
+    border: 3px solid rgb(103, 72, 187);
+    -webkit-box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+    -moz-box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+    box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+  }
+  #submitNewIssue {
+    min-width: 35vw;
+    border: 2px solid rgb(102, 68, 196);
+    margin: 0 .8rem;
+    -webkit-box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+    -moz-box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+    box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+    border-radius: 5px;
+    background: rgb(156, 156, 184);
+
+  }
+  #update-issue {
+    min-width: 35vw;
+    border: 2px solid rgb(102, 68, 196);
+    margin: 0 .8rem;
+    -webkit-box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+    -moz-box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+    box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+    border-radius: 5px;
+    background: rgb(156, 156, 184);
+
+
+  }
+  .closed {
+    background-color: rgb(72, 60, 80);
+  }
+  .open {
+    background: rgb(143, 143, 197);
+  
+
+  }
+  
+  .id {
+    font-size: 10.5px;
+  }
+  button {
+    padding: .25rem;
+    margin: .5rem;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  p {
+    margin: .25rem;
+  }
+
+  #link-box {
+    background: rgb(143, 143, 197);
+    padding: .75rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    width: 20vw;
+    -webkit-box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+    -moz-box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+    box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+  }
+  a {
+  
+    color: black;
+  
+  }
+  a:visited {
+    color: black;
+  }
+  a:hover {
+    color: rgb(43, 39, 39);
+  }
+  input {
+    padding: .5rem;
+    margin: .5rem;
+    outline: none;
+    min-height: 1.5rem;
+    min-width: 4rem;
+    border-radius: 5px;
+    -webkit-box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+    -moz-box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+    box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+    border: 3px solid rgb(103, 72, 187);
+  }
+  textarea {
+    padding: .5rem;
+    margin: .5rem;
+    outline: none;
+    resize: vertical;
+    min-width: 4rem;
+    min-height: 3.5rem;
+    border: 3px solid rgb(103, 72, 187);
+    border-radius: 5px;
+    box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+  
+  }
+  
+#checkbox {
+    padding: .25rem;
+    margin: .5rem;
+    text-align: center;
+    margin-left: .25rem;
+    box-shadow: 0;
+  }
+  button {
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    border-radius: 5px;
+    border: 2px solid rgb(103, 72, 187);
+    box-shadow: -5px 3px 14px 0px rgba(117,105,117,1);
+  }
+  button:hover {
+    cursor: pointer;
+    background:  rgb(198, 184, 235);
+    transition: .25s ease-in-out;
+    border: 3px solid rgb(103, 72, 187);
+    padding: .45rem;
+  
+  }

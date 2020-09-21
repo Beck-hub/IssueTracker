@@ -7,42 +7,49 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/public/issues.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <h1 id='projectTitle'></h1>
     </header>
     <center>
+      <div id="forms">
       <div id='submitNewIssue'>
-        <br>
+  
         <h3>Submit a new issue:</h3>
         <form id="newIssue" method="post" action="/api/">
-          <input type="text" name="issue_title" placeholder="*Title" style="width: 320px; margin-bottom: 3px;" required=''><br>
-          <textarea type="text" name="issue_text" placeholder="*Text" style="width: 320px; height: 100px;" required=''></textarea><br>
-          <input type="text" name="created_by" placeholder="*Created by" style="width: 100px" required=''>
-          <input type="text" name="assigned_to" placeholder="(opt)Assigned to" style="width: 100px">
-          <input type="text" name="status_text" placeholder="(opt)Status text" style="width: 100px"><br>
+          <input type="text" name="issue_title" placeholder="*Title" required='true'><br>
+          <textarea type="text" name="issue_text" placeholder="*Text" required='true'></textarea><br>
+          <input type="text" name="created_by" placeholder="*Created by"  required='true'><br>
+          <input type="text" name="assigned_to" placeholder="Assigned to"><br>
+          <input type="text" name="status_text" placeholder="Status text"><br>
           <button type="submit">Submit Issue</button>
         </form>
-
       </div>
-      
+      <div id="update-issue">
+        <h3>Update an Issue</h3>
+        <form id="projectForm" class="border">
+          <input class="update-input" type="text" name="_id" placeholder="*_id" required='true'><br>
+          <input class="update-input" type="text" name="issue_title" placeholder="Title"><br>
+          <textarea class="update-input" type="text" name="issue_text" placeholder="Text"></textarea><br>
+          <input class="update-input" type="text" name="created_by" placeholder="Created by"><br>
+          <input class="update-input" type="text" name="assigned_to" placeholder="Assigned to"><br>
+          <input class="update-input" type="text" name="status_text" placeholder="Status text"><br>
+          <label id="checkbox" ><input type="checkbox" name="open" value=false> Check to close issue</label><br>
+          <button type="submit">Submit Issue</button>
+        </form>
+      </div>
+    </div>
       <div id='issueDisplay'></div>
-         <h3>Update an Issue</h3>
-      <form id="projectForm" class="border">
-        <input type="text" name="_id" placeholder="*_id" style="width: 100px" required=''><br>
-        <input type="text" name="issue_title" placeholder="(opt)Title" style="width: 100px"><br>
-        <textarea type="text" name="issue_text" placeholder="(opt)Text" style="width: 100px"></textarea><br>
-        <input type="text" name="created_by" placeholder="(opt)Created by" style="width: 100px"><br>
-        <input type="text" name="assigned_to" placeholder="(opt)Assigned to" style="width: 100px"><br>
-        <input type="text" name="status_text" placeholder="(opt)Status text" style="width: 100px"><br>
-        <label><input type="checkbox" name="open" value=false> Check to close issue</label><br>
-        <button type="submit">Submit Issue</button>
-      </form>
+     
+     
       <code id='jsonRes'></code>
-      <a href="/">Home</a>
-      <hr style='margin: 50px; margin-top: 200px'>
+      <div id="link-box">
+        <a href="/">Home</a>
+      </div>
+    
     </center>
     
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
